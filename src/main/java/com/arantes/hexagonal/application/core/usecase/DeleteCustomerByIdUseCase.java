@@ -1,13 +1,13 @@
 package com.arantes.hexagonal.application.core.usecase;
 
 import com.arantes.hexagonal.application.ports.in.FindCustomerByIdInputPort;
-import com.arantes.hexagonal.application.ports.out.DeleteCustomerByIdInputPort;
+import com.arantes.hexagonal.application.ports.out.DeleteCustomerByIdOutputPort;
 
 public class DeleteCustomerByIdUseCase {
     private final FindCustomerByIdInputPort findCustomerByIdInputPort;
 
-    private final DeleteCustomerByIdInputPort deleteCustomerByIdInputPort;
-    public DeleteCustomerByIdUseCase(FindCustomerByIdInputPort findCustomerByIdInputPort, DeleteCustomerByIdInputPort deleteCustomerByIdInputPort) {
+    private final DeleteCustomerByIdOutputPort deleteCustomerByIdInputPort;
+    public DeleteCustomerByIdUseCase(FindCustomerByIdInputPort findCustomerByIdInputPort, DeleteCustomerByIdOutputPort deleteCustomerByIdInputPort) {
         this.findCustomerByIdInputPort = findCustomerByIdInputPort;
         this.deleteCustomerByIdInputPort = deleteCustomerByIdInputPort;
     }
